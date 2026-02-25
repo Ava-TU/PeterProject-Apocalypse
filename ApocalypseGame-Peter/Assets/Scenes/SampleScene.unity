@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b57efc0d0581c84eb45c32138839bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  mouseSensitivity: 100
+  mouseSensitivity: 150
   playerBody: {fileID: 1901505345}
 --- !u!1 &410087039
 GameObject:
@@ -645,7 +645,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7189, y: 1.7189, z: 1.7189}
+  m_LocalScale: {x: 5.294384, y: 5.294384, z: 5.294384}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -660,6 +660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1901505345}
   - component: {fileID: 1901505344}
+  - component: {fileID: 1901505346}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -709,6 +710,20 @@ Transform:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1901505346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901505343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48592fa1446c34445ad60037414d66cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  controller: {fileID: 1901505344}
+  speed: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
