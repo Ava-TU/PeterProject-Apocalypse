@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class PlayerMovementScript : MonoBehaviour
 {
+    [Header("Player Settings")]
     public CharacterController controller;
 
     public float speed;
     public float gravity;
+    public float jumpHeight;
 
+    [Header("Ground Check Settings")]
     public Transform groundCheck;
     public float groundDistance; //Radius of sphere that does the ground check
     public LayerMask groundMask;
@@ -31,6 +34,11 @@ public class PlayerMovementScript : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z; //does the movement based on the local coordinates
 
         controller.Move(move * speed * Time.deltaTime); //Moves using the character controller
+
+        if (Input.GetButtonDown("Jump") && isGrounded) //Checks if the player has pressed the jump button and if they are grounded
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity); //lets the player jump using physics woah
+        }
 
         velocity.y += gravity * Time.deltaTime;
 
