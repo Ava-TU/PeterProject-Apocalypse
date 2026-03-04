@@ -9,6 +9,8 @@ public class PlayerStatsScript : MonoBehaviour
 
     public TMP_Text healthText;
 
+    public Slider healthBar;
+
     public KeyCode loseHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,6 +25,9 @@ public class PlayerStatsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //This changes the value of the slider to the current health value
+        healthBar.value = currentHealth;
+
         //TO TEST OUT HEALTH LOSS FOR BUILD
         if (Input.GetKeyDown(loseHealth))
         {
