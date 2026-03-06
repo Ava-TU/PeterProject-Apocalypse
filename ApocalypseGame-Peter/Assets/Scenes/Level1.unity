@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 19598618}
   - component: {fileID: 19598617}
   - component: {fileID: 19598616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StartFloor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 42263427}
   - component: {fileID: 42263426}
   - component: {fileID: 42263425}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StartFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3312,7 +3312,7 @@ GameObject:
   - component: {fileID: 547114060}
   - component: {fileID: 547114059}
   - component: {fileID: 547114058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NarrowStripFloor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6267,7 +6267,7 @@ GameObject:
   - component: {fileID: 1159913433}
   - component: {fileID: 1159913432}
   - component: {fileID: 1159913431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CorridorFloor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6935,7 +6935,7 @@ GameObject:
   - component: {fileID: 1270551319}
   - component: {fileID: 1270551318}
   - component: {fileID: 1270551317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NarrowStripFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7361,7 +7361,7 @@ GameObject:
   - component: {fileID: 1374061193}
   - component: {fileID: 1374061192}
   - component: {fileID: 1374061191}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CorridorFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8751,7 +8751,7 @@ GameObject:
   - component: {fileID: 1678178720}
   - component: {fileID: 1678178719}
   - component: {fileID: 1678178718}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StartFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9513,7 +9513,7 @@ GameObject:
   - component: {fileID: 1837116888}
   - component: {fileID: 1837116887}
   - component: {fileID: 1837116886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StartFloor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10565,7 +10565,7 @@ GameObject:
   - component: {fileID: 2054328490}
   - component: {fileID: 2054328489}
   - component: {fileID: 2054328488}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BigRoomFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
