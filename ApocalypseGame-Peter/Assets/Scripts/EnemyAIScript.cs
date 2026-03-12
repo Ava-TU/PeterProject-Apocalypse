@@ -37,7 +37,7 @@ public class EnemyAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.Find("Player");
         //playerHealth = GetComponent<PlayerScript>();
-        boxCollider = GetComponent<BoxCollider>();
+        boxCollider = GetComponentInChildren<BoxCollider>();
 
         animator = GetComponent<Animator>();
     }
@@ -70,7 +70,12 @@ public class EnemyAI : MonoBehaviour
 
     void Attack()
     {
-        agent.SetDestination(transform.position); //Sets the destination to enemys current position, stopping them from moving 
+        if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Mutant Swiping"))//Checks if the enemies current animation state isn't the attacing animation
+        {
+            animator.SetTrigger("Attack");//Triggers the attack animation
+            agent.SetDestination(transform.position); //Sets the destination to enemys current position, stopping them from moving
+        }
+        
     }
 
     void Patrol()
@@ -101,6 +106,26 @@ public class EnemyAI : MonoBehaviour
         if(Physics.Raycast(destPoint, Vector3.down, groundLayer)) //Checks if its inside the NavMesh area before applying new destination
         {
             walkPointSet = true;
+        }
+    }
+
+    void EnableAttack()
+    {
+        boxCollider.enabled = true;
+    }
+
+    void DisableAttack()
+    {
+        boxCollider.enabled = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        var player = other.GetComponent<PlayerMovementScript>();
+
+        if(player != null)
+        {
+            print("HIT!");
         }
     }
 }
