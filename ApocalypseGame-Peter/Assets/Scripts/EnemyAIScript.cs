@@ -14,6 +14,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     LayerMask groundLayer, playerLayer;
 
+    //EnemyStats
+    [SerializeField]
+    int health, damage;
+
     //For Patrol
     Vector3 destPoint;
     bool walkPointSet;
@@ -126,6 +130,8 @@ public class EnemyAI : MonoBehaviour
         if(player != null)
         {
             print("HIT!");
+            player.GetComponent<PlayerStatsScript>().currentHealth -= damage;
+            DisableAttack();
         }
     }
 }

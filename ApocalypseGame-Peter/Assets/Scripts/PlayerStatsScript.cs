@@ -27,6 +27,7 @@ public class PlayerStatsScript : MonoBehaviour
     {
         //This changes the value of the slider to the current health value
         healthBar.value = currentHealth;
+        healthText.text = "HP: " + currentHealth;
 
         //TO TEST OUT HEALTH LOSS FOR BUILD
         if (Input.GetKeyDown(loseHealth))

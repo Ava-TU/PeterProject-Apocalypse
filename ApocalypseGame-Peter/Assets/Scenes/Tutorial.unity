@@ -859,6 +859,8 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+  health: 30
+  damage: 10
   walkRange: 15
   sightRange: 8
   attackRange: 2
