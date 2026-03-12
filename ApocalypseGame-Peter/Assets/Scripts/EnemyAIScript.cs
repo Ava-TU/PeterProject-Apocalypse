@@ -48,6 +48,19 @@ public class EnemyAI : MonoBehaviour
         playerInSight = Physics.CheckSphere(transform.position, sightRange, playerLayer); //Checks if the player is on the right layer, if its in the sights range and if the position is in range
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, playerLayer);
 
+        if(!playerInSight && !playerInAttackRange)
+        {
+            Patrol();
+        }
+        if(playerInSight && !playerInAttackRange)
+        {
+            Chase();
+        }
+        if(playerInSight && playerInAttackRange)
+        {
+            Attack();
+        }
+
     }
 
     void Chase()
