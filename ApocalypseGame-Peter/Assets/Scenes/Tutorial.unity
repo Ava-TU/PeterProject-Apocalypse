@@ -990,6 +990,7 @@ MonoBehaviour:
   attackArea: {fileID: 191497681}
   attackRange: 1
   attackDamage: 10
+  attackRate: 2
 --- !u!1 &1564515763 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8093900369729530502, guid: 107c7d28678bf5f41a815e4b1fc4edb2, type: 3}
