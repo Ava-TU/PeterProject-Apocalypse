@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyAIScript : MonoBehaviour
 {
     GameObject player;
 
@@ -11,12 +11,10 @@ public class EnemyAI : MonoBehaviour
 
     private Animator animator; //To play the animations
 
+    EnemyStatsScript enemy;
+
     [SerializeField]
     LayerMask groundLayer, playerLayer;
-
-    //EnemyStats
-    [SerializeField]
-    int health, damage;
 
     //For Patrol
     Vector3 destPoint;
@@ -42,6 +40,7 @@ public class EnemyAI : MonoBehaviour
         player = GameObject.Find("Player");
         //playerHealth = GetComponent<PlayerScript>();
         boxCollider = GetComponentInChildren<BoxCollider>();
+        enemy = GetComponent<EnemyStatsScript>();
 
         animator = GetComponent<Animator>();
     }
@@ -130,7 +129,7 @@ public class EnemyAI : MonoBehaviour
         if(player != null)
         {
             print("HIT!");
-            player.GetComponent<PlayerStatsScript>().currentHealth -= damage;
+            player.GetComponent<PlayerStatsScript>().currentHealth -= enemy.attack;
             DisableAttack();
         }
     }
