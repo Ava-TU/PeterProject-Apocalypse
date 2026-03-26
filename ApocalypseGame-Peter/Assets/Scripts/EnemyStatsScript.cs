@@ -3,6 +3,8 @@ using UnityEngine;
 public class EnemyStatsScript : MonoBehaviour
 {
 
+    public Animator animator;
+
     //EnemyStats
     public int health, attack;
 
@@ -28,7 +30,8 @@ public class EnemyStatsScript : MonoBehaviour
     {
         Debug.Log("Enemy died!");
 
-        //Death anim?
+        //Death anim
+        animator.SetBool("isDead", true);
 
         //Disable the enemy
         GetComponent<Collider>().enabled = false; //Disables the collider
