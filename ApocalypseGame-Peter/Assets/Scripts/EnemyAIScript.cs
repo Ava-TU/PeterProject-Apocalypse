@@ -17,7 +17,7 @@ public class EnemyAIScript : MonoBehaviour
     LayerMask groundLayer, playerLayer;
 
     //For Patrol
-    Vector3 destPoint;
+    public Vector3 destPoint;
     bool walkPointSet;
 
     [SerializeField]

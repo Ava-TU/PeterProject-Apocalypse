@@ -35,6 +35,9 @@ public class EnemyStatsScript : MonoBehaviour
 
         //Disable the enemy
         GetComponent<Collider>().enabled = false; //Disables the collider
+        GetComponent<EnemyAIScript>().isPatrol = false;
+        GetComponent<EnemyAIScript>().isChase = false;
+        GetComponent<EnemyAIScript>().isAttack = false;
         GetComponent<EnemyAIScript>().enabled = false;
         this.enabled = false; //disables this current script
     }
