@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombatScript : MonoBehaviour
 {
 
     public KeyCode playerAttack;
     public LayerMask enemyLayers;
+    public Image ui_Hand;
+    public Sprite attackHand;
+    public Sprite idleHand;
 
     public Transform attackArea;
     public float attackRange;
@@ -18,6 +22,7 @@ public class PlayerCombatScript : MonoBehaviour
     {
         if (Time.time >= nextAttackTime)
         {
+            ui_Hand.sprite = idleHand;
             if (Input.GetKeyDown(playerAttack))
             {
                Attack();
@@ -29,6 +34,8 @@ public class PlayerCombatScript : MonoBehaviour
     void Attack()
     {
         //Play attack animation
+        ui_Hand.sprite = attackHand;
+
         //Detect enemies in range
         //the collider stores all the detected enemies we hit in the named variable
         Collider[] hitEnemies = Physics.OverlapSphere(attackArea.position, attackRange, enemyLayers); //creates a sphere to detect if an enemy is being collided with

@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 345466250}
   - component: {fileID: 345466249}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Hand_UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,15 +242,15 @@ RectTransform:
   m_GameObject: {fileID: 345466247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.969901, y: 6.969901, z: 6.969901}
+  m_LocalScale: {x: 1.4529587, y: 1.4529587, z: 1.4529587}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1321104779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 637, y: -228}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 592, y: -176}
+  m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &345466249
 MonoBehaviour:
@@ -1103,6 +1103,9 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 256
+  ui_Hand: {fileID: 345466249}
+  attackHand: {fileID: 21300000, guid: 7aed104c2d2c65f439c77d816e199b41, type: 3}
+  idleHand: {fileID: 21300000, guid: ca71f09114c5db64d91202e6db946a16, type: 3}
   attackArea: {fileID: 191497681}
   attackRange: 1
   attackDamage: 10
