@@ -582,6 +582,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42263423}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &55487879 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9165907212774699999, guid: 0421547459e242a4bb0a43ae5edfe06c, type: 3}
+  m_PrefabInstance: {fileID: 908854662}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &57918050
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,6 +2552,10 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 908854664}
+    - target: {fileID: 6852083823309693646, guid: f390a26db1f5e7e409089700341902fa, type: 3}
+      propertyPath: ui_Hand
+      value: 
+      objectReference: {fileID: 55487879}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

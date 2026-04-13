@@ -440,6 +440,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5620577174191063754}
   m_SourcePrefab: {fileID: 100100000, guid: d18bb8e343ec81e4db0fe096cdf1f595, type: 3}
+--- !u!95 &835048884924500616 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: d18bb8e343ec81e4db0fe096cdf1f595, type: 3}
+  m_PrefabInstance: {fileID: 6556155979728320281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4335670435172600288 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1812909498023395591, guid: d18bb8e343ec81e4db0fe096cdf1f595, type: 3}
@@ -490,6 +495,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+  destPoint: {x: 0, y: 0, z: 0}
   walkRange: 15
   sightRange: 8
   attackRange: 2
@@ -558,5 +564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d7ae0b76f845d4098134281a269bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  health: 0
-  damage: 0
+  animator: {fileID: 835048884924500616}
+  health: 30
+  attack: 10
