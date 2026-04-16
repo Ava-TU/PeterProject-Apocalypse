@@ -29,7 +29,7 @@ public class QuestPoint : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey((submit)))
+        if (Input.GetKeyDown((submit)))
         {
             SubmitPressed();
         } 
