@@ -1092,6 +1092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cebbfb72e3e99724e8965e004cab5cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestManager
+  loadQuestState: 0
 --- !u!1 &1857868681
 GameObject:
   m_ObjectHideFlags: 0
