@@ -17,5 +17,6 @@ MonoBehaviour:
   levelRequirement: 1
   npcSpokenTo: 0
   questPrerequisites: []
-  questStepPrefabs: []
+  questStepPrefabs:
+  - {fileID: 2969252566861817371, guid: e66ffb926e0b59847ac154de97c1b068, type: 3}
   experienceReward: 250
