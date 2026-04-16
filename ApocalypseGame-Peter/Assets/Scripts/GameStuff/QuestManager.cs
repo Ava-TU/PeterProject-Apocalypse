@@ -1,9 +1,12 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
     private Dictionary<string, Quest> questMap;
+
+    private int currentPlayerLevel;
 
     private void Awake()
     {
@@ -33,10 +36,56 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    private void ChangeQuestState(string id, QuestState state)
+    {
+        Quest quest = GetQuestById(id);
+        quest.state = state;
+        GameEventManager.instance.questEvents.QuestStateChange(quest);
+    }
+
+    private bool CheckRequirementsMet(Quest quest)
+    {
+        //start true and prove to be false
+        bool meetsRequirements = true;
+
+        //check player level requirements
+        //if (currentPlayerLevel < quest.info.levelRequirement)
+        //{
+            //meetsRequirements = false;
+        //}
+
+        //check quest prerequisites for completion
+        foreach (QuestInfoSO prerequisiteQuestInfo in quest.info.questPrerequisites)
+        {
+            if (GetQuestById(prerequisiteQuestInfo.id).state != QuestState.FINISHED)
+            {
+                meetsRequirements = false;
+                //add break statement here so we dont continue on the next quest
+                break;
+            }
+
+        }
+        return meetsRequirements;
+    }
+
+    private void Update()
+    {
+        //loop through ALL quests
+        foreach (Quest quest in questMap.Values)
+        {
+            //if we're now meeting the requirements, switch over to the CAN_START state
+            if (quest.state == QuestState.REQUIREMENTS_NOT_MET && CheckRequirementsMet(quest))
+            {
+                ChangeQuestState(quest.info.id, QuestState.CAN_START);
+            }
+        }
+    }
+
     private void StartQuest(string id)
     {
-        //TO DO - start the quest
-        Debug.Log("Start Quest: " + id);
+        Quest quest = GetQuestById(id);
+        quest.InstantiateCurrentQuestStep(this.transform);
+        ChangeQuestState(quest.info.id, QuestState.IN_PROGRESS);
     }
 
     private void AdvanceQuest(string id)
