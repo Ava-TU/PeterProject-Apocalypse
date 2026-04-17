@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(SphereCollider))]
 public class QuestPoint : MonoBehaviour
@@ -51,6 +53,8 @@ public class QuestPoint : MonoBehaviour
         if (currentQuestState.Equals(QuestState.CAN_START) && startPoint)
         {
             GameEventManager.instance.questEvents.StartQuest(questId);
+       
+            //dialoguePanel.QuestStartText.SetActive(true);
         }
         else if (currentQuestState.Equals(QuestState.CAN_FINISH) && finishPoint)
         {
