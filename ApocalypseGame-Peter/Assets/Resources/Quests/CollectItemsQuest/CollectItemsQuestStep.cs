@@ -21,11 +21,24 @@ public class CollectItemsQuestStep : QuestStep
         if (materialsCollected < materialsToComplete)
         {
             materialsCollected++;
+            UpdateState();
         }
 
         if (materialsCollected >= materialsToComplete)
         {
             FinishQuestStep();
         }
+    }
+
+    private void UpdateState()
+    {
+        string state = materialsCollected.ToString();
+        ChangeState(state);
+    }
+
+    protected override void SetQuestStepState(string state)
+    {
+        this.materialsCollected = System.Int32.Parse(state);
+        UpdateState();
     }
 }
