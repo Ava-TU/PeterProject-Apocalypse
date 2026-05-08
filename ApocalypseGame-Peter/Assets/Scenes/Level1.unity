@@ -694,6 +694,10 @@ PrefabInstance:
       propertyPath: sceneIndex
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4340703056981877781, guid: f390a26db1f5e7e409089700341902fa, type: 3}
+      propertyPath: deathSceneIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6852083823309693646, guid: f390a26db1f5e7e409089700341902fa, type: 3}
       propertyPath: ui_Hand
       value: 
