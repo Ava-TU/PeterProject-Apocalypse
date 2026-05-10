@@ -33,6 +33,8 @@ public class EnemyAIScript : MonoBehaviour
     public bool isChase;
     public bool isAttack;
 
+    public AudioSource hurtSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -130,6 +132,7 @@ public class EnemyAIScript : MonoBehaviour
         {
             print("HIT!");
             player.GetComponent<PlayerStatsScript>().currentHealth -= enemy.attack;
+            hurtSound.Play();
             DisableAttack();
         }
     }

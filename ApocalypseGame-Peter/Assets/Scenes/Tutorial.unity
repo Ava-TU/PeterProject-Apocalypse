@@ -995,6 +995,11 @@ RectTransform:
   m_AnchoredPosition: {x: -53.59, y: 4.33}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &932212983 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5561546942795605771, guid: f390a26db1f5e7e409089700341902fa, type: 3}
+  m_PrefabInstance: {fileID: 872210299217724808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &984890091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,14 +1775,6 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 986849033}
-    - target: {fileID: 4340703056981877781, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      propertyPath: sceneIndex
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4340703056981877781, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      propertyPath: deathSceneIndex
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6852083823309693646, guid: f390a26db1f5e7e409089700341902fa, type: 3}
       propertyPath: ui_Hand
       value: 
@@ -1795,6 +1792,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
+      propertyPath: hurtSound
+      value: 
+      objectReference: {fileID: 932212983}
     - target: {fileID: 6214207659949640264, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: m_Name
       value: Enemy
