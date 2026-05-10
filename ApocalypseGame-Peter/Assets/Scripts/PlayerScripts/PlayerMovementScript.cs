@@ -32,6 +32,7 @@ public class PlayerMovementScript : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z; //does the movement based on the local coordinates
+        if (move.sqrMagnitude > 1f) move.Normalize();
 
         controller.Move(move * speed * Time.deltaTime); //Moves using the character controller
 
