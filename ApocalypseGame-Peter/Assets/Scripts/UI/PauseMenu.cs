@@ -39,7 +39,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
-        Cursor.lockState = isCursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+        //Cursor.lockState = isCursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
         Cursor.visible = !isCursorLocked;
 
         foreach (var script in scriptsToDisable)
