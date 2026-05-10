@@ -41,9 +41,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2862224035708656610}
   - component: {fileID: 7960751597406255636}
+  - component: {fileID: 6852083823309693646}
   - component: {fileID: 437811741109158046}
   - component: {fileID: 4340703056981877781}
-  - component: {fileID: 6852083823309693646}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -95,6 +95,29 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6852083823309693646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692585251935782762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6be8c20c8727a4390f1fc9425fed41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  playerAttack: 323
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  ui_Hand: {fileID: 0}
+  attackHand: {fileID: 21300000, guid: 7aed104c2d2c65f439c77d816e199b41, type: 3}
+  idleHand: {fileID: 21300000, guid: ca71f09114c5db64d91202e6db946a16, type: 3}
+  attackArea: {fileID: 7806669689185703598}
+  attackRange: 1
+  attackDamage: 10
+  attackRate: 2
 --- !u!114 &437811741109158046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,29 +156,6 @@ MonoBehaviour:
   healthText: {fileID: 0}
   healthBar: {fileID: 0}
   loseHealth: 104
---- !u!114 &6852083823309693646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 692585251935782762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6be8c20c8727a4390f1fc9425fed41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  playerAttack: 323
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 256
-  ui_Hand: {fileID: 0}
-  attackHand: {fileID: 21300000, guid: 7aed104c2d2c65f439c77d816e199b41, type: 3}
-  idleHand: {fileID: 21300000, guid: ca71f09114c5db64d91202e6db946a16, type: 3}
-  attackArea: {fileID: 7806669689185703598}
-  attackRange: 1
-  attackDamage: 10
-  attackRate: 2
 --- !u!1 &1751998494209683103
 GameObject:
   m_ObjectHideFlags: 0
