@@ -176,8 +176,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.3962264, g: 0.28992176, b: 0, a: 1}
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -460,6 +460,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2333340228121678940, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
+      propertyPath: m_Size.x
+      value: 0.88166314
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333340228121678940, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0271556
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333340228121678940, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
+      propertyPath: m_Size.z
+      value: 0.66132206
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333340228121678940, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
+      propertyPath: m_Center.x
+      value: 0.016142095
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333340228121678940, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
+      propertyPath: m_Center.y
+      value: 0.3274947
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333340228121678940, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
+      propertyPath: m_Center.z
+      value: 0.09421715
+      objectReference: {fileID: 0}
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: walkRange
       value: 10
@@ -618,6 +642,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1084763691482942076, guid: f390a26db1f5e7e409089700341902fa, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1084763691482942076, guid: f390a26db1f5e7e409089700341902fa, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1084763691482942076, guid: f390a26db1f5e7e409089700341902fa, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1084763691482942076, guid: f390a26db1f5e7e409089700341902fa, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2862224035708656610, guid: f390a26db1f5e7e409089700341902fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 64.7
@@ -666,6 +706,14 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 908854664}
+    - target: {fileID: 4340703056981877781, guid: f390a26db1f5e7e409089700341902fa, type: 3}
+      propertyPath: sceneIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340703056981877781, guid: f390a26db1f5e7e409089700341902fa, type: 3}
+      propertyPath: deathSceneIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6852083823309693646, guid: f390a26db1f5e7e409089700341902fa, type: 3}
       propertyPath: ui_Hand
       value: 

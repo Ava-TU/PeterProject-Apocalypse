@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerStatsScript : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PlayerStatsScript : MonoBehaviour
 
     public Slider healthBar;
 
-    public KeyCode loseHealth;
+    public int deathSceneIndex;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,18 +30,12 @@ public class PlayerStatsScript : MonoBehaviour
         healthBar.value = currentHealth;
         healthText.text = "HP: " + currentHealth;
 
-        //TO TEST OUT HEALTH LOSS FOR BUILD
-        if (Input.GetKeyDown(loseHealth))
-        {
-            currentHealth -= 10;
-            healthText.text = "HP: " + currentHealth;
-            print("Lost Health!");
-        }
         if (currentHealth <= 0)
         {
             currentHealth = 0;
             healthText.text = "HP: " + currentHealth;
             print("Dead!");
+            SceneManager.LoadScene(deathSceneIndex);
         }
     }
 }

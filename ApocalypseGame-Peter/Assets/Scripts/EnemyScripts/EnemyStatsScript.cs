@@ -8,6 +8,8 @@ public class EnemyStatsScript : MonoBehaviour
     //EnemyStats
     public int health, attack;
 
+    public AudioSource deathSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,6 +34,9 @@ public class EnemyStatsScript : MonoBehaviour
 
         //Death anim
         animator.SetBool("isDead", true);
+
+        //plays sound
+        deathSound.Play();
 
         //Disable the enemy
         GetComponent<Collider>().enabled = false; //Disables the collider
