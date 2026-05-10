@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class InteractionScript : MonoBehaviour
 {
     public UnityEvent enteredTrigger, exitedTrigger, interacted;
     private bool insideTrigger;
+
+    public int sceneIndex;
 
     // Update is called once per frame
     void Update()
@@ -31,5 +34,10 @@ public class InteractionScript : MonoBehaviour
             exitedTrigger.Invoke();
             insideTrigger = false;
         }
+    }
+
+    public void GoToScene()
+    {
+        SceneManager.LoadScene(sceneIndex);
     }
 }
