@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class CollectSoundPlay : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public AudioSource collectSound;
 
-    // Update is called once per frame
-    void Update()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Treasure"))
+        {
+            collectSound.Play();
+        }
     }
 }

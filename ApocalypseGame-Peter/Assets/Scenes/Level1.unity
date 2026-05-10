@@ -257,7 +257,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: walkRange
       value: 10
@@ -337,7 +337,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: walkRange
       value: 10
@@ -406,7 +406,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: walkRange
       value: 10
@@ -575,7 +575,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: walkRange
       value: 10
@@ -664,7 +664,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: walkRange
       value: 10
@@ -730,29 +730,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 437811741109158046, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      propertyPath: groundMask.m_Bits
-      value: 576
-      objectReference: {fileID: 0}
     - target: {fileID: 692585251935782762, guid: f390a26db1f5e7e409089700341902fa, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1084763691482942076, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1084763691482942076, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1084763691482942076, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1084763691482942076, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2862224035708656610, guid: f390a26db1f5e7e409089700341902fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -802,14 +782,6 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 908854664}
-    - target: {fileID: 4340703056981877781, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      propertyPath: sceneIndex
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4340703056981877781, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      propertyPath: deathSceneIndex
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6852083823309693646, guid: f390a26db1f5e7e409089700341902fa, type: 3}
       propertyPath: ui_Hand
       value: 
@@ -817,13 +789,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5126129796824017998, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 749500351}
-    - targetCorrespondingSourceObject: {fileID: 5126129796824017998, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 749500352}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f390a26db1f5e7e409089700341902fa, type: 3}
 --- !u!114 &368295802 stripped
 MonoBehaviour:
@@ -847,7 +813,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: walkRange
       value: 10
@@ -1047,7 +1013,7 @@ GameObject:
   - component: {fileID: 727740773}
   m_Layer: 0
   m_Name: Treasure (4)
-  m_TagString: Untagged
+  m_TagString: Treasure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1368,46 +1334,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &749500347 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5126129796824017998, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-  m_PrefabInstance: {fileID: 368295801}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &749500351
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749500347}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.49999994
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &749500352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749500347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d288f0203d8b37842afc22da05dc0ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollectSoundPlay
 --- !u!1001 &755206632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1505,7 +1431,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 6214207659949640264, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: m_Name
       value: Enemy (14)
@@ -1555,11 +1481,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
---- !u!82 &805362939 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5561546942795605771, guid: f390a26db1f5e7e409089700341902fa, type: 3}
-  m_PrefabInstance: {fileID: 368295801}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &806679223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,7 +1849,7 @@ GameObject:
   - component: {fileID: 923214651}
   m_Layer: 0
   m_Name: Treasure (3)
-  m_TagString: Untagged
+  m_TagString: Treasure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2152,7 +2073,7 @@ GameObject:
   - component: {fileID: 993709319}
   m_Layer: 0
   m_Name: Treasure
-  m_TagString: Untagged
+  m_TagString: Treasure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2371,7 +2292,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: walkRange
       value: 10
@@ -2467,7 +2388,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: walkRange
       value: 10
@@ -2536,7 +2457,7 @@ PrefabInstance:
     - target: {fileID: 3793828632224561065, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: hurtSound
       value: 
-      objectReference: {fileID: 805362939}
+      objectReference: {fileID: 0}
     - target: {fileID: 6214207659949640264, guid: 994d2d2e9d6c88e4b9fea71ee14f42c8, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -2666,7 +2587,7 @@ GameObject:
   - component: {fileID: 1691620654}
   m_Layer: 0
   m_Name: Treasure (2)
-  m_TagString: Untagged
+  m_TagString: Treasure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3076,7 +2997,7 @@ GameObject:
   - component: {fileID: 2071638379}
   m_Layer: 0
   m_Name: Treasure (1)
-  m_TagString: Untagged
+  m_TagString: Treasure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

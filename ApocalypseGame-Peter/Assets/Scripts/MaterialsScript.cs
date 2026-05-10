@@ -8,7 +8,7 @@ public class MaterialsScript : MonoBehaviour
     private void CollectMaterial()
     {
         gameObject.GetComponent<SphereCollider>().enabled = false;
-        gameObject.SetActive(false);
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
         Debug.Log("Mat collected");
         
         //GameEventManager.instance.miscEvents.MatCollected();
