@@ -3,12 +3,15 @@ using UnityEngine.Events;
 
 public class MaterialsScript : MonoBehaviour
 {
+
+    public AudioSource collectSound;
     private void CollectMaterial()
     {
         gameObject.GetComponent<BoxCollider>().enabled = false;
         gameObject.SetActive(false);
         Debug.Log("Mat collected");
-        GameEventManager.instance.miscEvents.MatCollected();
+        collectSound.Play();
+        //GameEventManager.instance.miscEvents.MatCollected();
         StopAllCoroutines();
     }
 
