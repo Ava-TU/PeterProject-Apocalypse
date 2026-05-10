@@ -13149,7 +13149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9dc03dba803b940b5787ff9fcf4015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadSceneScript
-  sceneIndex: 5
+  sceneIndex: 6
 --- !u!135 &2083730306
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class MaterialsScript : MonoBehaviour
     public AudioSource collectSound;
     private void CollectMaterial()
     {
-        gameObject.GetComponent<BoxCollider>().enabled = false;
+        gameObject.GetComponent<SphereCollider>().enabled = false;
         gameObject.SetActive(false);
         Debug.Log("Mat collected");
         collectSound.Play();
